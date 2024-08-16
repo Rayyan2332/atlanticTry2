@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Information</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #333;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Space between logo and nav */
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .logo {
+            margin-right: auto; /* Pushes the logo to the left */
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Center the nav items */
+            flex: 1; /* Allow nav to take remaining space */
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px; /* Space between the links */
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Contact Information Section */
+        .contact-info {
+            background-color: #fff;
+            padding: 40px 60px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+            margin-top: 20px; /* Adjust margin as needed */
+        }
+
+        .contact-info h1 {
+            font-size: 28px;
+            color: #4CAF50; /* Soothing green color */
+            margin-bottom: 20px;
+        }
+
+        .contact-details {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .contact-details p, .contact-details address {
+            margin-bottom: 15px;
+        }
+
+        .contact-details a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .contact-details a:hover {
+            text-decoration: underline;
+        }
+
+        /* Address Style */
+        address {
+            font-style: normal;
+        }
+        :root {
+            --primary-color: #4A0E4E;
+            --secondary-color: #8E44AD;
+            --text-color: #333;
+            --bg-color: #f8f9fa;
+            --accent-color: #F1C40F;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="home.html"><img src="WhatsApp Image 2024-08-16 at 5.21.21 PM.jpeg" class="logo1" alt="Atlantic Stay Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="ammeneties.html"><u>Amenities</u></a></li>
+                <li><a href="rooms.html"><u>Rooms</u></a></li>
+                <li><a href="contactus.html"><u>Contact Us</u></a></li>
+                <li><a href="images.html"><u>Images</u></a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="contact-info">
+        <h1>Contact Us</h1>
+        <div class="contact-details">
+            <p><strong>Phone:  </strong><br>
+                +91 9148723078 <br>
+                +91  6366232161 <br>
+                +91  9148766678</p>
+            <p><strong>Email:</strong> <a href="mailto:naeemansari@hotmail.com">naeemansari@hotmail.com</a></p>
+            <address>
+                <strong>Address:</strong><br>
+                486, 6th A Cross,<br>
+                10th Main Rd, Maruthi Layout,<br>
+                HBR Layout 4th Block,<br>
+                Hennur Gardens, Bengaluru,<br>
+                Karnataka 560043
+            </address>
+        </div>
+    </section>
+</body>
+</html>

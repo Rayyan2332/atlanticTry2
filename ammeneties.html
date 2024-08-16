@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlantic Stay Amenities</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: var(--text-color);
+            --secondary-color: var(--text-color);
+            --text-color: #333;
+            --bg-color: #f8f9fa;
+            --accent-color: #F1C40F;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            padding: 15px 5%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--accent-color);
+        }
+
+        section {
+            padding: 80px 10%;
+            margin: 0;
+        }
+
+        .amenity {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-bottom: 50px;
+            transition: transform 0.3s ease;
+        }
+
+        .amenity:hover {
+            transform: translateY(-10px);
+        }
+
+        .amenity-content {
+            flex: 1;
+            margin-right: 40px;
+        }
+
+        .amenity h2 {
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+
+        .amenity p {
+            font-size: 1.2em;
+            color: var(--text-color);
+            margin-bottom: 20px;
+        }
+
+        .amenity-images {
+            display: flex;
+            gap: 20px;
+            flex: 1;
+        }
+
+        .amenity img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="home.html"> <img src="WhatsApp Image 2024-08-16 at 5.21.21 PM.jpeg" class="logo1" alt="Atlantic Stay Logo"></a>
+            </div>
+            <ul>
+                <li><a href="ammeneties.html"><u>Amenities</u></a></li>
+                <li><a href="rooms.html"><u>Rooms</u></a></li>
+                <li><a href="contactus.html"><u>Contact Us</u></a></li>
+                <li><a href="images.html"><u>Images</u></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="amenity">
+        <div class="amenity-content">
+            <h2>Sky Roof Kitchen</h2>
+            <p>Experience culinary delight in our state-of-the-art sky roof kitchen. Enjoy panoramic views while preparing your favorite meals in a spacious and well-equipped environment.</p>
+        </div>
+        <div class="amenity-images">
+            <img src="kitchen.jpeg" alt="Sky Roof Kitchen">
+        </div>
+    </section>
+
+    <section class="amenity">
+        <div class="amenity-content">
+            <h2>Modern Workstation</h2>
+            <p>Stay productive in our modern workstation. Designed for focus and comfort, our workspaces provide the perfect environment for studying or remote work.</p>
+        </div>
+        <div class="amenity-images">
+            <img src="workplace1.jpg" alt="Workstation 1">
+            <img src="wokst2.jpg" alt="Workstation 2">
+        </div>
+    </section>
+
+    <section class="amenity">
+        <div class="amenity-content">
+            <h2>Top-Notch Laundry Facilities</h2>
+            <p>Keep your clothes fresh and clean with our top-of-the-line laundry facilities. Our efficient machines and spacious area make laundry day a breeze.</p>
+        </div>
+        <div class="amenity-images">
+            <img src="laundry1.jpeg" alt="Laundry 1">
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 Atlantic Stay. All rights reserved.
+    </footer>
+</body>
+</html>

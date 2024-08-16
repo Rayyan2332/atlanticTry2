@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlantic Stay Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 1700px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #4A0E4E;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #4A0E4E;
+            border-bottom: 2px solid #FFDB58;
+            padding-bottom: 10px;
+        }
+        header {
+    background-color:#333;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="home.html"> <img src="WhatsApp Image 2024-08-16 at 5.21.21 PM.jpeg" class="logo1" alt="Atlantic Stay Logo"></a>
+            </div>
+            <ul>
+                <li><a href="ammeneties.html"><u>Amenities</u></a></li>
+                <li><a href="rooms.html"><u>Rooms</u></a></li>
+                <li><a href="contactus.html"><u>Contact Us</u></a></li>
+                <li><a href="images.html"><u>Images</u></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Atlantic Stay Gallery</h1>
+
+        <div class="section">
+            <h2>Exterior Views</h2>
+            <div class="gallery">
+                <div class="gallery-item"><img src="frontview.jpg" alt="Front view of Atlantic Stay"></div>
+                <div class="gallery-item"><img src="fvNight.jpg" alt="Night view of Atlantic Stay"></div>
+                <div class="gallery-item"><img src="FRONTV.jpeg" alt="Another front view of Atlantic Stay"></div>
+                <div class="gallery-item"><img src="FVN2.jpg" alt="Second night view of Atlantic Stay"></div>
+                
+            </div>
+        </div>
+        <div class="section">
+            <h2>Reception</h2>
+            <div class="gallery">
+                <div class="gallery-item"><img src="recep.jpeg" alt="Room 1"></div>
+                <div class="gallery-item"><img src="RECEP2.jpeg" alt="Room 2"></div>
+                
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>ROOM IRL VIDEO</h2>
+            <div class="gallery">
+               
+                  <video width="320" height="240" controls>
+                    <source src="roomvid.mp4" type="video/mp4">
+                    <source src="roomvid.mp4" type="video/ogg">
+                  Your browser does not support the video tag.
+                  </video>
+            </div>
+        </div>
+
+
+        
+
+        <div class="section">
+            <h2>Rooms</h2>
+            <div class="gallery">
+                <div class="gallery-item"><img src="room1.jpg" alt="Room 1"></div>
+                <div class="gallery-item"><img src="room2.jpg" alt="Room 2"></div>
+                <div class="gallery-item"><img src="room3.jpg" alt="Room 3"></div>
+                <div class="gallery-item"><img src="bathr.jpg" alt="Bathroom"></div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Work Spaces</h2>
+            <div class="gallery">
+                <div class="gallery-item"><img src="wokst2.jpg" alt="Work station 2"></div>
+                <div class="gallery-item"><img src="workplace1.jpg" alt="Work place 1"></div>
+            </div>
+
+        </div>
+        <div class="section">
+            <h2>KITCHEN IRL VIDEO</h2>
+                  <video width="320" height="240" controls>
+                    <source src="vid1.mp4" type="video/mp4">
+                    <source src="vid1.mp4" type="video/ogg">
+                  Your browser does not support the video tag.
+                  </video>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Laundry</h2>
+            <div class="gallery">
+                <div class="gallery-item"><img src="laundry1.jpeg" alt="Work station 2"></div>
+                
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

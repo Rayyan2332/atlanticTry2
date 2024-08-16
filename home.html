@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlantic Stay Ladies Hostel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: var(--text-color);
+            --secondary-color:var(--text-color);
+            --accent-color: #F1C40F;
+            --text-color: #333;
+            --bg-color: #F9F9F9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            padding: 1rem 5%;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 2rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--accent-color);
+        }
+
+        .hero {
+            background-image: url('frontimgclean.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 200vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            color: white;
+            max-width: 800px;
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #D4AC0D;
+        }
+
+        .amenities {
+            padding: 5rem 10%;
+            background-color: white;
+        }
+
+        .amenities h2 {
+            text-align: center;
+            color: var(--primary-color);
+            margin-bottom: 3rem;
+            font-size: 2.5rem;
+        }
+
+        .amenities ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .amenities li {
+            background-color: var(--bg-color);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .amenities li:hover {
+            transform: translateY(-10px);
+        }
+
+        .amenities li i {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 3rem 10%;
+            text-align: center;
+        }
+
+        .footer-content h3 {
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+
+        .footer-content p {
+            margin-bottom: 0.5rem;
+        }
+
+        .copyright {
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        p{
+            font: size 20px;;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+        <nav>
+            
+            <div class="logo">
+                
+                <a href="home.html"><img src="WhatsApp Image 2024-08-16 at 5.21.21 PM.jpeg" alt="Atlantic Stay Logo"></a>
+            </div>
+            <ul>
+                <li><a href="ammeneties.html">Amenities</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="images.html">Images</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Atlantic Stay Ladies PG
+
+                </h1>
+            <p><i>Classy Comfortable Affordable..</i></p>
+            
+        </div>
+    </section>
+
+    <section id="amenities" class="amenities">
+        <h2>Our Amenities</h2>
+        <ul>
+            <li><i class="fas fa-shield-alt"></i><p>Secure Environment</p></li>
+            <li><i class="fas fa-wifi"></i><p>High-speed Wi-Fi</p></li>
+            <li><i class="fas fa-broom"></i><p>Daily Housekeeping</p></li>
+            <li><i class="fas fa-bed"></i><p>Fully Furnished Rooms</p></li>
+            <li><i class="fas fa-tshirt"></i><p>Self Laundry</p></li>
+            <li><i class="fas fa-utensils"></i><p>Skyroof Kitchen</p></li>
+            <li><i class="fas fa-laptop"></i><p>Workstation</p></li>
+        </ul>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <h3>Contact Us</h3>
+            
+            <p>Phone: +91 9148723078
+                      +91  6366232161
+                      +91  9148766678</p>
+                      <address>
+                        <strong>Address:</strong><br>
+                        486, 6th A Cross,<br>
+                        10th Main Rd, Maruthi Layout,<br>
+                        HBR Layout 4th Block,<br>
+                        Hennur Gardens, Bengaluru,<br>
+                        Karnataka 560043
+                    </address>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Atlantic Stay. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
